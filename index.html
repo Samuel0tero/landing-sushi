@@ -5,27 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>El arte del SUSHI: de cero a experto</title>
   <style>
-    body { font-family: Arial, sans-serif; background-color: #fffef9; margin: 0; padding: 0; }
-    .container { max-width: 800px; margin: auto; padding: 20px; background: white; }
-    .hero { text-align: center; padding: 40px 20px; background-color: #000; color: white; }
-    .hero h1 { font-size: 34px; margin-bottom: 10px; color: #FF3C3C; }
+    body { font-family: 'Segoe UI', sans-serif; background-color: #fffef9; margin: 0; padding: 0; }
+    .container { max-width: 800px; margin: auto; padding: 20px; background: white; animation: fadeIn 1s ease-in-out; }
+    .hero { text-align: center; padding: 30px 20px; background: linear-gradient(135deg, #000000, #1a1a1a); color: white; }
+    .hero img { max-width: 300px; border-radius: 12px; margin-bottom: 20px; animation: fadeInDown 1s ease; }
+    .hero h1 { font-size: 32px; margin-bottom: 10px; color: #FF3C3C; animation: fadeIn 1.5s ease; }
     .hero p { font-size: 18px; margin-bottom: 20px; }
-    .btn { background-color: #ff3c3c; color: white; padding: 15px 25px; border: none; border-radius: 5px; text-decoration: none; font-size: 16px; }
+    .btn { background-color: #ff3c3c; color: white; padding: 15px 25px; border: none; border-radius: 8px; text-decoration: none; font-size: 16px; transition: background-color 0.3s ease; display: inline-block; }
+    .btn:hover { background-color: #e13232; }
     h2 { color: #222; margin-top: 40px; }
     ul { list-style-type: disc; padding-left: 20px; }
     .cta { text-align: center; margin: 40px 0; }
-    .testimonial { font-style: italic; color: #555; margin: 30px 0; }
-    img.banner { max-width: 100%; border-radius: 10px; margin-bottom: 20px; }
+    .testimonial { font-style: italic; color: #555; margin: 30px 0; background-color: #f9f9f9; padding: 15px; border-radius: 8px; animation: fadeInUp 1s ease; }
     .includes, .faq { margin-top: 40px; }
     .includes ul, .faq ul { list-style-type: none; padding-left: 0; }
     .includes li::before { content: "✅ "; }
     .faq li { margin-bottom: 10px; }
+    @keyframes fadeIn { from {opacity: 0;} to {opacity: 1;} }
+    @keyframes fadeInDown { from {opacity: 0; transform: translateY(-20px);} to {opacity: 1; transform: translateY(0);} }
+    @keyframes fadeInUp { from {opacity: 0; transform: translateY(20px);} to {opacity: 1; transform: translateY(0);} }
   </style>
 </head>
 <body>
   <div class="container">
     <div class="hero">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Sushi_platter.jpg/1024px-Sushi_platter.jpg" alt="Curso de Sushi" class="banner">
+      <img src="https://cdn.pixabay.com/photo/2016/11/23/18/52/sushi-1858986_1280.jpg" alt="Curso de Sushi">
       <h1>El arte del SUSHI: de cero a EXPERTO</h1>
       <p>Aprende a preparar sushi profesional desde tu casa y convierte esta habilidad en un negocio rentable.</p>
       <a href="https://go.hotmart.com/G99913289T?ap=34a2" class="btn">¡Empieza ahora!</a>
